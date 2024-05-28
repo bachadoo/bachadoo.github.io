@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'ocra';
+    src: url(ocra.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'ocra', monospace;
 	color: whitesmoke;
 	transition: 0.3s ease color;
 
@@ -15,7 +20,7 @@ body {
     height: 100vh;
     margin: 0;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 #background-overlay {
@@ -34,7 +39,7 @@ body {
 
 #center {
     text-align: center;
-    max-width: 600px;
+    max-width: 900px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -78,5 +83,17 @@ details ul {
 }
 
 details li {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 5px
+    rgba(
+      0,
+      0,
+      0,
+      0.1
+    );
+}
+pre {
+    font-family: monospace; white-space: pre; overflow: auto;text-align: left !important;color:#0094ff;margin:0;background:rgba(0,0,0,0.9);border:1px solid rgba(255,255,255,0.15);padding:10px;font-size:16px;color:#b5e853;border-radius:2px;word-wrap:normal;overflow:auto;overflow-y:hidden
+}
+code{
+    letter-spacing:-1px;text-align: left !important;
 }
