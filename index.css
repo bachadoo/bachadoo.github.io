@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: whitesmoke;
+	transition: 0.3s ease color;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('bach.gif') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.6);
+	backdrop-filter: blur(4px);
+	
+}
+
+#center {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    margin-top: 50px;
+    font-size: 3em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.533);
+}:hover{
+	color: rgba(143, 207, 255, 0.945);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.533);
+}
+
+#capt {
+    margin-top: 20px;
+    font-size: 2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+li {
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+details summary {
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+details li {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
